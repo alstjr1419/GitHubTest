@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".PrintStarActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PrintStarActivity" />
+        <activity android:name=".ButtonAlignActivity" />
+        <activity android:name=".Ex11Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ButtonAlignActivity">
-
-        </activity>
+        <activity android:name=".CalculatorActivity" />
+        <activity android:name=".Mp3playerActivity"></activity>
     </application>
 
 </manifest>
