@@ -5,9 +5,126 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CalculatorActivity"
-    android:orientation="vertical">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="계산기"/>
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/firstInput"
+            style="@style/calc_top_position"
+            android:maxLength="4"/>
+
+        <TextView
+            android:id="@+id/operator"
+            style="@style/calc_between_position"
+             />
+
+        <EditText
+            android:id="@+id/secondInput"
+            style="@style/calc_top_position"
+            android:maxLength="4"/>
+
+        <TextView
+            style="@style/calc_between_position"
+            android:text="=" />
+        <!-- 상속받은 스타일은 다시 덧입혀서 수정할수 있다. -->
+        <TextView
+            android:id="@+id/result"
+            style="@style/calc_top_position"
+            android:layout_weight="2"
+            android:maxLength="15"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="4">
+            <LinearLayout
+                style="@style/calc_third_position">
+                <Button
+                    style="@style/buttonStyle"
+                    android:text="7"/>
+                <Button
+                    style="@style/buttonStyle"
+                    android:text="8"/>
+                <Button
+                    style="@style/buttonStyle"
+                    android:text="9"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/calc_third_position">
+                <Button
+                    style="@style/buttonStyle"
+                    android:text="4"/>
+                <Button
+                    style="@style/buttonStyle"
+                    android:text="5"/>
+                <Button
+                    style="@style/buttonStyle"
+                    android:text="6"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/calc_third_position">
+                <Button
+                    style="@style/buttonStyle"
+                    android:text="1"/>
+                <Button
+                    style="@style/buttonStyle"
+                    android:text="2"/>
+                <Button
+                    style="@style/buttonStyle"
+                    android:text="3"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/calc_third_position">
+                <Button
+                    style="@style/buttonStyle"
+                    android:text="0"/>
+                <Button
+                    style="@style/buttonStyle"
+                    android:layout_weight="2.3"
+                    android:text="="/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="5">
+            <Button
+                style="@style/buttonStyle2"
+                android:text="c"
+                android:id="@+id/clear"/>
+            <Button
+                style="@style/buttonStyle2"
+                android:text="/"
+                android:inputType="number"
+                android:id="@+id/division"/>
+            <Button
+                style="@style/buttonStyle2"
+                android:text="*"
+                android:id="@+id/multiply"/>
+            <Button
+                style="@style/buttonStyle2"
+                android:text="-"
+                android:id="@+id/subtract"/>
+            <Button
+                style="@style/buttonStyle2"
+                android:text="+"
+                android:id="@+id/plus"/>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
