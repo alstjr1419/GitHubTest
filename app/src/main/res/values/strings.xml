@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="calcTitle">계산기</string>
+    <string name="mp3_player_button_song1">primary-Playboy Diary</string>
+    <string name="mp3_player_button_song2">primary-LOVE</string>
+    <string name="mp3_player_button_play">재생</string>
+    <string name="mp3_player_button_pause">일시정지</string>
+    <string name="mp3_player_button_stop">정지</string>
+    <string name="mp3_player_title">플레이어</string>
+    <string name="mainTitle">시험 어플리케이션</string>
 </resources>

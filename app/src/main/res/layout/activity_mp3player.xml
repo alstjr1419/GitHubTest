@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Mp3playerActivity">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="mp3player"/>
+    tools:context=".Mp3playerActivity"
+    android:orientation="vertical">
+<Button
+    style="@style/mp3playerButton"
+    android:id="@+id/mp3SongBtn1"
+    android:text="@string/mp3_player_button_song1"/>
+    <Button
+        style="@style/mp3playerButton"
+        android:id="@+id/mp3SongBtn2"
+        android:text="@string/mp3_player_button_song2"/>
+    <Button
+        style="@style/mp3playerButton"
+        android:id="@+id/pause_and_playBtn"
+        android:text="@string/mp3_player_button_pause"/>
+    <Button
+        style="@style/mp3playerButton"
+        android:id="@+id/stopBtn"
+        android:text="@string/mp3_player_button_stop"/>
 
-</RelativeLayout>
+</LinearLayout>

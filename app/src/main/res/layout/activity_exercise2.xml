@@ -4,53 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculatorActivity"
-    android:orientation="vertical"
-    >
-
+    tools:context=".exercise2"
+    android:orientation="vertical">
+    <!--top result-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <EditText
-            android:id="@+id/firstInput"
-            style="@style/calc_top_position"
-            android:maxLength="4"/>
-
-        <TextView
-            android:id="@+id/operator"
-            style="@style/calc_between_position"
-             />
-
-        <EditText
-            android:id="@+id/secondInput"
-            style="@style/calc_top_position"
-            android:maxLength="4"/>
-
+            style="@style/calc_top_position"/>
         <TextView
             style="@style/calc_between_position"
-            android:text="=" />
-        <!-- 상속받은 스타일은 다시 덧입혀서 수정할수 있다. -->
+            android:text="   "/>
+        <EditText
+            style="@style/calc_top_position"/>
         <TextView
-            android:id="@+id/result"
-            style="@style/calc_top_position"
-            android:layout_weight="2"
-            android:maxLength="15"
-            />
-
+            style="@style/calc_between_position"
+            android:text="="/>
+        <EditText
+            style="@style/calc_top_position"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        android:weightSum="4">
+        android:orientation="horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="3"
             android:orientation="vertical"
-            android:weightSum="4">
+            android:layout_weight="3">
             <LinearLayout
                 style="@style/calc_third_position">
                 <Button
@@ -63,6 +46,7 @@
                     style="@style/buttonStyle"
                     android:text="9"/>
             </LinearLayout>
+
             <LinearLayout
                 style="@style/calc_third_position">
                 <Button
@@ -75,6 +59,7 @@
                     style="@style/buttonStyle"
                     android:text="6"/>
             </LinearLayout>
+
             <LinearLayout
                 style="@style/calc_third_position">
                 <Button
@@ -87,6 +72,7 @@
                     style="@style/buttonStyle"
                     android:text="3"/>
             </LinearLayout>
+
             <LinearLayout
                 style="@style/calc_third_position">
                 <Button
@@ -95,38 +81,31 @@
                 <Button
                     style="@style/buttonStyle"
                     android:layout_weight="2.3"
-                    android:id="@+id/btn_equal"
                     android:text="="/>
-
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:weightSum="5">
+            android:orientation="vertical">
             <Button
                 style="@style/buttonStyle2"
-                android:text="c"
-                android:id="@+id/clear"/>
+                android:text="c"/>
             <Button
                 style="@style/buttonStyle2"
-                android:text="/"
-                android:inputType="number"
-                android:id="@+id/division"/>
+                android:text="+"/>
             <Button
                 style="@style/buttonStyle2"
-                android:text="*"
-                android:id="@+id/multiply"/>
+                android:text="-"/>
             <Button
                 style="@style/buttonStyle2"
-                android:text="-"
-                android:id="@+id/subtract"/>
+                android:text="/"/>
             <Button
                 style="@style/buttonStyle2"
-                android:text="+"
-                android:id="@+id/plus"/>
+                android:text="*"/>
         </LinearLayout>
+
+
     </LinearLayout>
 </LinearLayout>
